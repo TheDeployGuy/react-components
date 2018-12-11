@@ -1,11 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <NavLink className="navbar-brand" to="/">
+    <a className="navbar-brand" to="/">
       [Title]
-    </NavLink>
+    </a>
     <button
       className="navbar-toggler"
       type="button"
@@ -21,16 +20,16 @@ const Navbar = () => (
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav">
         <li className="nav-item">   
-          <NavLink activeClassName="active" className="nav-link" to="/teams">
+          <a activeClassName="active" className="nav-link" to="/teams">
             [Protected Link 1]
-          </NavLink>
+          </a>
         </li>
       </ul>
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-        <NavLink activeClassName="active" className="nav-link" to="/login">
+        <a activeClassName="active" className="nav-link" to="/login">
           [Unprotected Link]
-        </NavLink>
+        </a>
         </li>
       </ul>
     </div>
